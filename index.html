@@ -12,7 +12,10 @@
     />
 
     <!--=============== BOXICONS ===============-->
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
     <!--=============== SWIPER CSS ===============-->
     <link rel="stylesheet" href="" />
@@ -20,16 +23,73 @@
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="./assets/css/style.css" />
 
-    <title>Responsive portfolio website </title>
+    <title>Responsive portfolio website</title>
   </head>
   <body>
     <!--=============== HEADER ===============-->
-    <header class="header" id="header"></header>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">Carolina</a>
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class="bx bx-home-alt"></i>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <i class="bx bxs-user"></i>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class="bx bxs-book"></i>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#work" class="nav__link">
+                <i class="bx bx-briefcase-alt-2"></i>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class="bx bx-message-square-detail"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Theme change button -->
+        <i class="bx bx-moon change-theme" id="theme-button"></i>
+      </nav>
+    </header>
 
     <!--=============== MAIN ===============-->
     <main class="main">
       <!--=============== HOME ===============-->
-      <section class="home section" id="home"></section>
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__data">
+            <span class="home__greeting"> Hello, I'm </span>
+            <h1 class="home__name">Carolina Cladera</h1>
+            <h3 class="home__education">Frontend Developer</h3>
+            <div class="home__buttons">
+              <a
+                download=""
+                href="assets/pdf/Cv Carolina Cladera.pdf"
+                class="button button--ghost"
+              >
+                Download Cv
+              </a>
+              <a href="#about" class="button">About me</a>
+            </div>
+          </div>
+          <div class="home__handle">
+              <img src="" alt="" class="home">
+          </div>
+        </div>
+      </section>
 
       <!--=============== ABOUT ===============-->
       <section class="about section" id="about"></section>
