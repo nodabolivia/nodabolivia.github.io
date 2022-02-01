@@ -2,30 +2,67 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Porcentajes y descuentos</title>
+
+    <!--=============== FAVICON ===============-->
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
+
+    <!--=============== BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <title>Responsive portfolio website </title>
   </head>
   <body>
-    <header>
-      <h1>Porcentajes y descuentos</h1>
-     
-    </header>
-    <section>
-      <h2>Calcula el precio a pagar de tus productos con descuento</h2>
-      <form>
-        <label for="price">Escribe el precio de tu producto</label>
-        <input type="number" id="price" />
-        <br />
-        <label for="discount">Escribe el descuento de tu producto</label>
-        <input type="number" id="discount" />
-        <button type="button" onClick="onClickButtonPriceDiscount()">
-          Calcular el precio con descuento
-        </button>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header"></header>
 
-        <p id="resultPrice"></p>
-      </form>
-    </section>
-    <script src="./index.js"></script>
+    <!--=============== MAIN ===============-->
+    <main class="main">
+      <!--=============== HOME ===============-->
+      <section class="home section" id="home"></section>
+
+      <!--=============== ABOUT ===============-->
+      <section class="about section" id="about"></section>
+
+      <!--=============== SKILLS ===============-->
+      <section class="skills section" id="skills"></section>
+
+      <!--=============== SERVICES ===============-->
+      <section class="services section"></section>
+
+      <!--=============== WORK ===============-->
+      <section class="work section" id="work"></section>
+
+      <!--=============== TESTIMONIALS ===============-->
+      <section class="testimonial section"></section>
+
+      <!--=============== CONTACT ===============-->
+      <section class="contact section" id="contact"></section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer"></footer>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src=""></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src=""></script>
+
+    <!--=============== MIXITUP FILTER ===============-->
+    <script src=""></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
