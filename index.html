@@ -19,7 +19,11 @@
     />
 
     <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="" />
+    <!-- <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+  /> -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
 
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="./assets/css/style.css" />
@@ -136,7 +140,7 @@
             </div>
 
             <p class="about__description">
-              for now, i don't consider an specialist of any area, but I still
+              For now, i don't consider an specialist of any area, but I still
               looking for it. In the other side, during my career I develop some
               many skills which permited me to: create web pages, create mobile
               apps, administrate databases, analyze data, an others things.
@@ -516,10 +520,124 @@
       </section>
 
       <!--=============== TESTIMONIALS ===============-->
-      <section class="testimonial section"></section>
+      <section class="testimonial section">
+        <span class="section__subtitle">My clients say </span>
+        <h2 class="section__title">Testimonial</h2>
+
+        <div class="testimonial__container container swiper">
+          <div class="swiper-wrapper">
+            <div class="testimonial__card swiper-slide">
+              <img
+                src="assets/img/testimonial1.png"
+                alt=""
+                class="testimonial__img"
+              />
+              <h3 class="testimonial__name">Jhon Doe</h3>
+              <p class="testimonial_description">
+                A really good job, all aspects of the project were followed step
+                by step and with good results.
+              </p>
+            </div>
+            <div class="testimonial__card swiper-slide">
+              <img
+                src="assets/img/testimonial2.png"
+                alt=""
+                class="testimonial__img"
+              />
+              <h3 class="testimonial__name">Paula Vusy</h3>
+              <p class="testimonial_description">
+                A really good job, all aspects of the project were followed step
+                by step and with good results.
+              </p>
+            </div>
+            <div class="testimonial__card swiper-slide">
+              <img
+                src="assets/img/testimonial3.png"
+                alt=""
+                class="testimonial__img"
+              />
+              <h3 class="testimonial__name">Sara Cill</h3>
+              <p class="testimonial_description">
+                A really good job, all aspects of the project were followed step
+                by step and with good results.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
 
       <!--=============== CONTACT ===============-->
-      <section class="contact section" id="contact"></section>
+      <section class="contact section" id="contact">
+        <span class="section__subtitle"> Get in touch </span>
+        <h2 class="section__title">Contact Me</h2>
+        <div class="contact__container container grid">
+          <div class="contact__content">
+            <h3 class="contact__title">Talk to me</h3>
+            <div class="contact__info">
+              <div class="contact__card">
+                <i class="bx bx-mail-send contact__card-icon"></i>
+                <h3 class="contact__card-title">Email</h3>
+                <span class="contact__card-data">
+                  carolinacladeramel@gmail.com
+                </span>
+                <a
+                  href="mailto:carolinacladeramel@gmail.com"
+                  target="_blank"
+                  class="contact__button"
+                >
+                  Write me
+                  <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+                </a>
+              </div>
+
+              <div class="contact__card">
+                <i class="bx bxl-whatsapp contact__card-icon"></i>
+                <h3 class="contact__card-title">Whatsapp</h3>
+                <span class="contact__card-data"> (+591) 73190823 </span>
+                <a
+                  href="https://api.whatsapp.com/send?phone=59173190823&text=Hello, more information!"
+                  target="_blank"
+                  class="contact__button"
+                >
+                
+                  Write me
+                  <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+                </a>
+                <a
+                  href="https://m.me/carocladera"
+                  target="_blank"
+                  class="contact__button"
+                >
+                  Write me
+                  <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+                </a>
+              </div>
+
+              <div class="contact__card">
+                <i class="bx bxl-messenger contact__card-icon"></i>
+                <h3 class="contact__card-title">Messenger</h3>
+                <span class="contact__card-data">
+                  Ana Carolina Cladera M.
+                </span>
+
+                <a
+                  href="https://m.me/carocladera"
+                  target="_blank"
+                  class="contact__button"
+                >
+                  Write me
+                  <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact__content">
+            <h3 class="contact__title">Write me your project</h3>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!--=============== FOOTER ===============-->
@@ -529,7 +647,8 @@
     <script src=""></script>
 
     <!--=============== SWIPER JS ===============-->
-    <script src=""></script>
+    <!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
 
     <!--=============== MIXITUP FILTER ===============-->
     <script src="assets/js/mixitup.min.js"></script>
