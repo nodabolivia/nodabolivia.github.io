@@ -7,29 +7,58 @@ function scrollHeader() {
 window.addEventListener('scroll', scrollHeader)
 
 
+
+
+
+/*                                                   */
+/*                                                   */
+/*                                                   */
+/*                                                   */
+/*                                                   */
+/*                                                   */
+/*                                                   */
+/*                                                   */
+/*                                                   */
+/*                                                   */
+/*                                                   */ 
 /*=============== SERVICES MODAL ===============*/
-const modalViews = document.querySelectorAll('.services__modal'),
-    modalBtns = document.querySelectorAll('.services__button'),
-    modalClose = document.querySelectorAll('.services__modal-close')
+// const modalViews = document.querySelectorAll('.services__modal'),
+//     modalBtns = document.querySelectorAll('.services__button'),
+//     modalClose = document.querySelectorAll('.services__modal-close')
 
-let modal = function (modalClick) {
-    modalViews[modalClick].classList.add('active-modal')
-}
+// let modal = function (modalClick) {
+//     modalViews[modalClick].classList.add('active-modal')
+// }
 
-modalBtns.forEach((mb, i) => {
-    mb.addEventListener('click', () => {
-        modal(i)
-    })
-})
+// modalBtns.forEach((mb, i) => {
+//     mb.addEventListener('click', () => {
+//         modal(i)
+//     })
+// })
 
-modalClose.forEach((mc) => {
-    mc.addEventListener('click', () => {
-        modalViews.forEach((mv) => {
-            mv.classList.remove('active-modal')
-        })
-    })
-})
+// modalClose.forEach((mc) => {
+//     mc.addEventListener('click', () => {
+//         modalViews.forEach((mv) => {
+//             mv.classList.remove('active-modal')
+//         })
+//     })
+// })
 
+
+
+
+
+/*                                                   */
+/*                                                   */
+/*                                                   */
+/*                                                   */
+/*                                                   */
+/*                                                   */
+/*                                                   */
+/*                                                   */
+/*                                                   */
+/*                                                   */
+/*                                                   */ 
 /*=============== MIXITUP FILTER PORTFOLIO ===============*/
 // let mixerPortfolio = mixitup(".work__container", {
 //     selectors: {
@@ -50,10 +79,46 @@ modalClose.forEach((mc) => {
 //     l.addEventListener("click", activeWork)
 // });
 
-/*=============== MIXITUP FILTER PORTFOLIO II ===============*/
-let mixerPortfolio2 = mixitup(".services__container", {
+
+
+
+/*                                                   */
+/*                                                   */
+/*                                                   */
+/*                                                   */
+/*                                                   */
+/*                                                   */
+/*                                                   */
+/*                                                   */
+/*                                                   */
+/*                                                   */
+/*                                                   */ 
+/*=============== PROJECTS MODAL ===============*/
+const modalViewsProject = document.querySelectorAll('.project__modal'),
+    modalBtnsProject = document.querySelectorAll('.project__button'),
+    modalCloseProject = document.querySelectorAll('.project__modal-close')
+
+let modalProject = function (modalClick) {
+    modalViewsProject[modalClick].classList.add('active-modal')
+}
+
+modalBtnsProject.forEach((mb, i) => {
+    mb.addEventListener('click', () => {
+        modalProject(i)
+    })
+})
+
+modalCloseProject.forEach((mc) => {
+    mc.addEventListener('click', () => {
+        modalViewsProject.forEach((mv) => {
+            mv.classList.remove('active-modal')
+        })
+    })
+})
+/*=============== Mixitup filter Project ===============*/
+let mixerPortfolioProjecta = mixitup(".project__container", {
     selectors: {
-        target: '.services__card'
+        target: '.project__card'
     },
     animation: {
         duration: 300
@@ -61,26 +126,32 @@ let mixerPortfolio2 = mixitup(".services__container", {
 });
 
 /* Link active work */
-const linkServices = document.querySelectorAll(".services__item");
-function activeServices() {
-    linkServices.forEach(l => l.classList.remove('active-services'));
-    this.classList.add("active-services")
+const linkProject = document.querySelectorAll(".project__item");
+function activeProject() {
+    linkProject.forEach(l => l.classList.remove('active-project'));
+    this.classList.add("active-project")
 }
-linkServices.forEach(l => {
-    l.addEventListener("click", activeServices)
+linkProject.forEach(l => {
+    l.addEventListener("click", activeProject)
 });
 
 
 
 
 
-
-
-
-
-
-/*=============== SWIPER TESTIMONIAL ===============*/
-let swiperTestimonial = new Swiper(".testimonial__container", {
+/*                                                   */
+/*                                                   */
+/*                                                   */
+/*                                                   */
+/*                                                   */
+/*                                                   */
+/*                                                   */
+/*                                                   */
+/*                                                   */
+/*                                                   */
+/*                                                   */ 
+/*=============== SWIPER REPOSITORIES ===============*/
+let swiperRepository = new Swiper(".repository__container", {
     spaceBetween: 24,
     loop: true,
     grabCursor: true,
