@@ -617,6 +617,37 @@ body.light-theme {
   visibility: visible;
 }
 
+/*=============== MERGE ===============*/
+
+.services__filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.services__item {
+  cursor: pointer;
+  color: var(--title-color);
+  padding: 0.25rem 0.75rem;
+  font-weight: var(--font-medium);
+  border-radius: 0.5rem;
+}
+
+/* Active item services*/
+.active-services{
+  background-color: var(--first-color);
+  color: var(--body-color);
+}
+
+
+
+
+
+
+
+
 /*=============== WORK ===============*/
 .work__container {
   padding-top: 1rem;
@@ -1088,7 +1119,7 @@ body.light-theme {
   }
   
   .testimonial__container{
-    width: 750px;
+    width:750px;
   }
 
   .testimonial__card{
